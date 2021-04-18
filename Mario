@@ -1,0 +1,29 @@
+eight_int(void);
+
+int main(void)
+{
+    int i = get_height_int();
+
+
+    for ( int w= 1 ; w < i + 1; w ++)
+    {
+        for (int j = 0; j < w; j++)
+    {
+        printf("#");
+    }
+
+        printf("\n");
+    }
+
+}
+
+int get_height_int(void)
+{
+    int n;
+    do
+    {
+        n = get_int("Height: ");
+    }
+    while (n > 8 || n < 1);
+    return n;
+}
